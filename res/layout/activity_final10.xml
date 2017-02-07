@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.final10.Final10Activity" >
+    
+    <TextView
+        android:id="@+id/txtday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="帳號"
+        android:textColor="#FF5577"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#333333"
+        android:ems="10"
+        android:textColor="#FFCCCC" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtday"
+        android:layout_below="@+id/editid"
+        android:layout_marginTop="52dp"
+        android:text="密碼"
+        android:textColor="#FF5577"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/editpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editid"
+        android:layout_below="@+id/txtname"
+        android:layout_marginTop="56dp"
+        android:background="#333333"
+        android:ems="10"
+        android:textColor="#FFCCCC" 
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/btnenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editpw"
+        android:layout_below="@+id/editpw"
+        android:layout_marginTop="54dp"
+        android:text="登入"
+        android:textColor="#FFCCCC" />
+
+    <Button
+        android:id="@+id/btnclean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnenter"
+        android:layout_alignBottom="@+id/btnenter"
+        android:layout_alignRight="@+id/editpw"
+        android:text="清除"
+        android:textColor="#FFCCCC" />
+
+    <Button
+        android:id="@+id/btn2edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnenter"
+        android:layout_alignBottom="@+id/btnenter"
+        android:layout_centerHorizontal="true"
+        android:text="新增"
+        android:textColor="#FFCCCC" />
+
+</RelativeLayout>

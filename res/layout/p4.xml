@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+    <TextView
+        android:id="@+id/txtday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF5577"
+        android:text="日期" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editday4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:textColor="#FF5577"
+            android:text="項目" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edititem4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:textColor="#FF5577"
+            android:text="金額" />
+
+        <Button
+            android:id="@+id/btnedit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editcoco4"
+            android:layout_below="@+id/editcoco4"
+            android:layout_marginTop="35dp"
+            android:textColor="#FFCCCC"
+            android:text="修改" />
+
+        <Button
+            android:id="@+id/btndel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnedit4"
+            android:layout_alignBottom="@+id/btnedit4"
+            android:layout_alignRight="@+id/editcoco4"
+            android:textColor="#FFCCCC"
+            android:text="刪除" />
+
+        <EditText
+            android:id="@+id/editday4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edititem4"
+            android:layout_below="@+id/txtday"
+            android:layout_marginTop="19dp"
+            android:background="#333333"
+            android:textColor="#FFCCCC" 
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/edititem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editcoco4"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="21dp"
+            android:background="#333333"
+            android:textColor="#FFCCCC"
+            android:ems="10">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editcoco4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#333333"
+            android:textColor="#FFCCCC"
+            android:ems="10"/>
+
+</RelativeLayout>

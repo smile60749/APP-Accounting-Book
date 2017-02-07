@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="日期"
+        android:textColor="#FF5577"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit4day"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="項目"
+        android:textColor="#FF5577"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtcoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit4item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="金額"
+        android:textColor="#FF5577"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit4coco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" >
+
+        <Button
+            android:id="@+id/btn2add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFCCCC"
+            android:text="新增" />
+
+        <Button
+            android:id="@+id/btn2sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFCCCC"
+            android:text="查詢" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn2look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFCCCC"
+        android:text="查帳" />
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="ID"
+        android:textColor="#FF5577"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn2back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFCCCC"
+        android:text="登出" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="溫馨提醒：請使用日期查詢"
+        android:textColor="#FF7755" />
+
+    <EditText
+        android:id="@+id/edit4day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit4item"
+        android:layout_below="@+id/txtday"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ex:20150101"
+        android:background="#333333"
+        android:textColor="#FFCCCC" />
+
+    <EditText
+        android:id="@+id/edit4item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit4coco"
+        android:layout_below="@+id/txtname"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Ex:花枝丸"
+        android:background="#333333"
+        android:textColor="#FFCCCC" />
+
+    <EditText
+        android:id="@+id/edit4coco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Ex:15"
+        android:background="#333333"
+        android:textColor="#FFCCCC" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

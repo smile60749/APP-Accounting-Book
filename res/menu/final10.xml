@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.final10.Final10Activity" >
+
+    <item
+        android:id="@+id/back"
+         android:alphabeticShortcut="b" 
+         android:orderInCategory="0" 
+         android:showAsAction="ifRoom|withText"
+         android:title="返回"/>
+    <item
+        android:id="@+id/about"
+         android:alphabeticShortcut="a" 
+         android:orderInCategory="0" 
+         android:showAsAction="ifRoom|withText"
+         android:title="關於"/>
+
+</menu>
